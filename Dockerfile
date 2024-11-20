@@ -35,4 +35,4 @@ COPY . .
 EXPOSE 3000
 
 # Run the application.
-CMD ["nodemon", "index.js"]
+CMD ["npx", "nodemon", "index.js"]

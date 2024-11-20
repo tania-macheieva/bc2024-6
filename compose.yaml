@@ -14,6 +14,8 @@ services:
     environment:
       NODE_ENV: production
     command: npx nodemon -L index.js -- -h 0.0.0.0 -p 3000 -c ./cache
+    volumes:
+          - ./cache:/usr/src/app/cache
 
     ports:
       - 3000:3000
