@@ -13,11 +13,11 @@ services:
       context: .
     environment:
       NODE_ENV: production
-    command: npx nodemon -L index.js -- -h 0.0.0.0 -p 3000 -c ./cache
+    command: npx nodemon --inspect=0.0.0.0:9229 -L index.js -- -h 0.0.0.0 -p 3000 -c ./cache
     volumes:
           - ./cache:/usr/src/app/cache
-
     ports:
+      - 9229:9229 
       - 3000:3000
 
 # The commented out section below is an example of how to define a PostgreSQL
