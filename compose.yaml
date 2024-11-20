@@ -13,7 +13,8 @@ services:
       context: .
     environment:
       NODE_ENV: production
-    command: 
+    command: npx nodemon -L index.js -- -h 0.0.0.0 -p 3000 -c ./cache
+
     ports:
       - 3000:3000
 

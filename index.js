@@ -100,7 +100,7 @@ app.get('/UploadForm.html', (req, res) => {
   res.sendFile(path.join(__dirname, 'UploadForm.html'));
 });
 app.get('/', (req, res) => {
-    res.send('Welcome to the Notes Service');
+    res.send('Welcome to the NotesService');
   });
 
 app.listen(port, host, () => {
